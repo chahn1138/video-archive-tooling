@@ -1,0 +1,16 @@
+# LibreOffice / Word lock files
+.~lock.*
+
+# Byte-compiled Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Run artefacts
+_run/
+*.log
+*.jsonl
+*.jsonl.tmp
+
+# Temp diff files created during dev
+diff_*.txt
