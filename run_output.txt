@@ -1,0 +1,75 @@
+PS C:\Users\chahn\bin> python .\video_copy_repair_windows.py G:\video C:\temp --resume
+────────────────────────────────────────────────────────────────────────
+  VIDEO COPY + REPAIR UTILITY  ·  Windows
+  2026-05-03  11:40:11
+────────────────────────────────────────────────────────────────────────
+  Source  : G:\video
+  Dest    : C:\temp
+  Mode    : RESUME — destination files will be health-checked before skipping
+  HW Accel: Nvidia NVENC available
+────────────────────────────────────────────────────────────────────────
+  Tool availability:
+    Windows  10  (AMD64)  build 26200
+    ✓  ffmpeg           C:\Users\chahn\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1-essentials_build\bin\ffmpeg.exe
+    ✓  ffprobe          C:\Users\chahn\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1-essentials_build\bin\ffprobe.exe
+    ✓  mkvmerge         C:\Program Files\MKVToolNix\mkvmerge.exe
+    ✓  mkvinfo          C:\Program Files\MKVToolNix\mkvinfo.exe
+    ✓  mkvpropedit      C:\Program Files\MKVToolNix\mkvpropedit.exe
+────────────────────────────────────────────────────────────────────────
+  Found 4357 video file(s) to process.
+
+  [────────────────────────────] 1/4357    done      '71.mp4                                 1.4 GB
+  [────────────────────────────] 2/4357    done      10 Cloverfield Lane.mkv                 2.8 GB
+  [────────────────────────────] 3/4357    done      10cc In Concert 1974-Tvrip-Abrasax.avi  350.0 MB
+  [────────────────────────────] 4/4357    done      12 Angry Men.mp4                        1.4 GB
+               X destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source
+RECOPY     G:\video\1900.mp4  (destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source)
+  [────────────────────────────] 5/4357    REPAIRED  1900.mp4                                4.9 GB [mp4]
+               X mp4_no_moov: moov atom not found — recording likely interrupted before finalisation. Repair will attempt remux with -movflags faststart
+                 repaired MP4 moov faststart relocation succeeded
+               ! mp4_mdat_only: mdat block found but no moov index — partial recovery may be possible
+               ! decode_probe_timeout: Decode probe timed out after 252s — file may be very large or severely corrupt. Copy will still be attempted.
+               X destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source
+RECOPY     G:\video\20,000 Leagues Under The Sea.mp4  (destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source)
+  [────────────────────────────] 6/4357    FAILED    20,000 Leagues Under The Sea.mp4        928.5 MB
+               ! mp4_unknown_box: First atom 'b'\xa3B\x86\x81'' is not a recognised MP4/MOV atom
+               X mp4_no_moov: moov atom not found — recording likely interrupted before finalisation. Repair will attempt remux with -movflags faststart
+               ! decode_errors: 889 decode error(s). First: [null @ 000001a8ff4be440] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 7362 >= 7362 (+888 more)
+               ! faststart_failed: Strategy 'faststart' did not succeed: Faststart failed (rc=4294967274):  tag for codec subrip in stream #2, codec not currently supported in container
+[out#0/
+               ! remux_failed: Strategy 'remux' did not succeed: Remux failed (rc=4294967274):  tag for codec subrip in stream #2, codec not currently supported in container
+[out#0/mp4
+               ! reencode_failed: Strategy 'reencode' did not succeed: Re-encode failed (rc=-1): Timed out after 60s
+               X destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source
+RECOPY     G:\video\20000 Leagues Under the Sea.mp4  (destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source)
+  [────────────────────────────] 7/4357    REPAIRED  20000 Leagues Under the Sea.mp4         2.4 GB [mp4]
+               X mp4_no_moov: moov atom not found — recording likely interrupted before finalisation. Repair will attempt remux with -movflags faststart
+                 repaired MP4 moov faststart relocation succeeded
+               ! mp4_mdat_only: mdat block found but no moov index — partial recovery may be possible
+  [────────────────────────────] 8/4357    OK        ...012.2009.BluRay.1080p.x264.YIFY.mp4  1.7 GB
+  [────────────────────────────] 9/4357    done      24X36 A Movie About Movie Posters.mkv   2.5 GB
+  [────────────────────────────] 10/4357    OK        30 Days of Night\30 Days Of Night.mp4   1.5 GB
+  [────────────────────────────] 11/4357    done      310 to Yuma (2007).mkv                  4.4 GB
+  [────────────────────────────] 12/4357    done      5 Fingers.avi                           800.9 MB
+  [────────────────────────────] 13/4357    done      65.mp4                                  1.7 GB
+  [────────────────────────────] 14/4357    done      75_guns_and_weed_e967a.avi              1.1 GB
+  [────────────────────────────] 15/4357    done      911AMATEUR\911 AMATEUR 1-3.avi          133.8 MB
+  [────────────────────────────] 16/4357    OK        ...iD-DEPRiVED\deprived-alvsz-xvid.avi  698.8 MB
+  [────────────────────────────] 17/4357    OK        A Man Escaped\A Man Escaped.avi         1.6 GB
+               X destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source
+RECOPY     G:\video\A Place in the Sun .mp4  (destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source)
+  [────────────────────────────] 18/4357    REPAIRED  A Place in the Sun .mp4                 939.4 MB [mp4]
+               X mp4_no_moov: moov atom not found — recording likely interrupted before finalisation. Repair will attempt remux with -movflags faststart
+                 repaired MP4 moov faststart relocation succeeded
+               ! mp4_mdat_only: mdat block found but no moov index — partial recovery may be possible
+  [────────────────────────────] 19/4357    OK        A Rage to Live\A Rage to Live.avi       1.4 GB
+               X destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source
+RECOPY     G:\video\A Star Is Born.mp4  (destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source)
+  [────────────────────────────] 20/4357    REPAIRED  A Star Is Born.mp4                      1.4 GB [mp4]
+               X mp4_no_moov: moov atom not found — recording likely interrupted before finalisation. Repair will attempt remux with -movflags faststart
+                 repaired MP4 moov faststart relocation succeeded
+               ! mp4_mdat_only: mdat block found but no moov index — partial recovery may be possible
+               ! decode_probe_timeout: Decode probe timed out after 71s — file may be very large or severely corrupt. Copy will still be attempted.
+  [────────────────────────────] 21/4357    done      A Streetcar Named Desire.mp4            1.4 GB
+               X destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source
+RECOPY     G:\video\A Zed and Two Noughts 1985.mp4  (destination fails health check (1 error(s): mp4_no_moov) — will re-copy from source)
