@@ -17,3 +17,6 @@ diff_*.txt
 
 # One-off helper scripts
 extract_docx.py
+
+# Backup folder (historical snapshots – keep on disk, not in repo)
+backup/
